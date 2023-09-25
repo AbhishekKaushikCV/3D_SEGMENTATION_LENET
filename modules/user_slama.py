@@ -10,7 +10,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import torch.backends.cudnn as cudnn
-from dataset.kitti.parser import Parser
+from dataset.slamantic.parser import Parser
 import __init__ as booger
 
 from tqdm import tqdm
@@ -20,7 +20,7 @@ from modules.PointRefine.spvcnn import SPVCNN
 # from modules.PointRefine.spvcnn_lite import SPVCNN
 
 
-class User():
+class UserSlama():
     def __init__(self, ARCH, DATA, datadir, outputdir, modeldir, split, point_refine=False):
         # parameters
         self.ARCH = ARCH
@@ -252,10 +252,13 @@ class User():
                 pred_np.tofile(path)
 
     def test(self):
+        cnn = []
+        knn = []
         # do test set
         self.infer_subset(loader=self.parser.get_test_set(),
-                          to_orig_fn=self.parser.to_original)
+                          to_orig_fn=self.parser.to_original,
+                          cnn = cnn, knn= knn)
 
-        print('Finished Inference')
+        print('Finished Inference my')
 
         return

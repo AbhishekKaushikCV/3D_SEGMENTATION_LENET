@@ -71,7 +71,7 @@ class LaserScan:
     def __len__(self):
         return self.size()
 
-    def open_scan(self, filename, from_pose, to_pose, if_transform=True):
+    def open_scan(self, filename, from_pose = None, to_pose = None, if_transform=True):
         """ Open raw scan and fill in attributes
         """
         # reset just in case there was an open structure
