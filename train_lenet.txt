@@ -1,0 +1,79 @@
+[32m Opening arch config file config/arch/LENet.yaml[0m
+[32m Opening arch config file config/labels/semantic-kitti.yaml[0m
+----------
+INTERFACE:
+  dataset: /workspace/dataset/SemanticKITTI
+  arch_cfg: config/arch/LENet.yaml
+  data_cfg: config/labels/semantic-kitti.yaml
+  log: /workspace//traning_logs/2023-9-25-16:53
+  pretrained: None
+----------
+
+[32m No pretrained directory found.[0m
+Copying files to /workspace//traning_logs/2023-9-25-16:53 for further reference.
+Sequences folder exists! Using sequences from /workspace/dataset/SemanticKITTI/sequences
+parsing seq 00
+parsing seq 01
+parsing seq 02
+parsing seq 03
+parsing seq 04
+parsing seq 05
+parsing seq 06
+parsing seq 07
+parsing seq 09
+parsing seq 10
+[32m There are 19130 frames in total. [0m
+[32m Using 19130 scans from sequences [0, 1, 2, 3, 4, 5, 6, 7, 9, 10][0m
+Sequences folder exists! Using sequences from /workspace/dataset/SemanticKITTI/sequences
+parsing seq 08
+[32m There are 4071 frames in total. [0m
+[32m Using 4071 scans from sequences [8][0m
+Loss weights from content:  tensor([  0.0000,  22.9317, 857.5627, 715.1100, 315.9618, 356.2452, 747.6170,
+        887.2239, 963.8915,   5.0051,  63.6247,   6.9002, 203.8796,   7.4802,
+         13.6315,   3.7339, 142.1462,  12.6355, 259.3699, 618.9667])
+Depth of backbone input =  5
+Number of parameters:  4.748816 M
+Training in device:  cuda
+Let's use 2 GPUs!
+Ignoring class  0  in IoU evaluation
+[IOU EVAL] IGNORE:  tensor([0])
+[IOU EVAL] INCLUDE:  tensor([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+        19])
+/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+Lr: 1.000e-05 | Update: 1.006e-05 mean,5.828e-05 std | Epoch: [0][0/3188] | Time 197.989 (197.989) | Data 193.289 (193.289) | Loss 19.2180 (19.2180) | Bd 3.4921 (3.4921) | acc 0.053 (0.053) | IoU 0.011 (0.011) | [721 days, 20:48:25]
+Lr: 1.624e-05 | Update: 3.317e-06 mean,1.565e-05 std | Epoch: [0][10/3188] | Time 1.150 (18.978) | Data 0.022 (17.592) | Loss 18.9428 (19.0714) | Bd 3.4927 (3.4921) | acc 0.158 (0.121) | IoU 0.031 (0.023) | [67 days, 11:08:14]
+Lr: 2.248e-05 | Update: 1.478e-06 mean,6.548e-06 std | Epoch: [0][20/3188] | Time 1.122 (10.433) | Data 0.022 (9.225) | Loss 18.6418 (18.9350) | Bd 3.4911 (3.4915) | acc 0.218 (0.169) | IoU 0.042 (0.030) | [36 days, 6:19:14]
+Lr: 2.873e-05 | Update: 1.600e-06 mean,6.827e-06 std | Epoch: [0][30/3188] | Time 1.197 (7.416) | Data 0.021 (6.256) | Loss 18.2561 (18.7744) | Bd 3.4869 (3.4907) | acc 0.334 (0.209) | IoU 0.068 (0.039) | [25 days, 5:14:17]
+Lr: 3.497e-05 | Update: 1.467e-06 mean,6.193e-06 std | Epoch: [0][40/3188] | Time 1.213 (5.877) | Data 0.022 (4.736) | Loss 17.3374 (18.5439) | Bd 3.4843 (3.4898) | acc 0.418 (0.249) | IoU 0.101 (0.050) | [19 days, 13:47:46]
+Lr: 4.121e-05 | Update: 1.245e-06 mean,5.426e-06 std | Epoch: [0][50/3188] | Time 1.126 (4.939) | Data 0.022 (3.811) | Loss 17.3594 (18.2897) | Bd 3.4740 (3.4880) | acc 0.497 (0.289) | IoU 0.130 (0.062) | [16 days, 3:18:17]
+Lr: 4.745e-05 | Update: 1.277e-06 mean,5.460e-06 std | Epoch: [0][60/3188] | Time 1.106 (4.316) | Data 0.022 (3.190) | Loss 16.6915 (18.0127) | Bd 3.4760 (3.4857) | acc 0.432 (0.315) | IoU 0.099 (0.071) | [13 days, 20:13:25]
+Lr: 5.370e-05 | Update: 1.445e-06 mean,7.786e-06 std | Epoch: [0][70/3188] | Time 1.154 (3.863) | Data 0.022 (2.744) | Loss 16.3397 (17.7572) | Bd 3.4670 (3.4832) | acc 0.503 (0.342) | IoU 0.124 (0.079) | [12 days, 4:25:43]
+Lr: 5.994e-05 | Update: 1.444e-06 mean,7.603e-06 std | Epoch: [0][80/3188] | Time 1.128 (3.523) | Data 0.022 (2.408) | Loss 15.6472 (17.5664) | Bd 3.4653 (3.4808) | acc 0.539 (0.364) | IoU 0.134 (0.086) | [10 days, 22:27:13]
+Lr: 6.618e-05 | Update: 1.363e-06 mean,7.802e-06 std | Epoch: [0][90/3188] | Time 1.168 (3.264) | Data 0.022 (2.146) | Loss 15.8169 (17.3409) | Bd 3.4602 (3.4787) | acc 0.471 (0.382) | IoU 0.110 (0.092) | [9 days, 23:23:21]
+Lr: 7.242e-05 | Update: 1.482e-06 mean,6.651e-06 std | Epoch: [0][100/3188] | Time 1.012 (3.051) | Data 0.022 (1.935) | Loss 14.9682 (17.1577) | Bd 3.4513 (3.4764) | acc 0.588 (0.399) | IoU 0.158 (0.098) | [9 days, 4:38:22]
+Lr: 7.866e-05 | Update: 1.506e-06 mean,7.658e-06 std | Epoch: [0][110/3188] | Time 1.040 (2.877) | Data 0.022 (1.763) | Loss 15.8793 (17.0090) | Bd 3.4539 (3.4740) | acc 0.504 (0.414) | IoU 0.127 (0.103) | [8 days, 13:19:35]
+Lr: 8.491e-05 | Update: 1.481e-06 mean,6.798e-06 std | Epoch: [0][120/3188] | Time 1.234 (2.733) | Data 0.023 (1.619) | Loss 15.8780 (16.8644) | Bd 3.4458 (3.4718) | acc 0.563 (0.428) | IoU 0.148 (0.108) | [8 days, 0:33:48]
+Lr: 9.115e-05 | Update: 1.373e-06 mean,8.224e-06 std | Epoch: [0][130/3188] | Time 1.405 (2.613) | Data 0.023 (1.497) | Loss 14.8143 (16.7170) | Bd 3.4482 (3.4698) | acc 0.475 (0.438) | IoU 0.116 (0.111) | [7 days, 13:50:09]
+Lr: 9.739e-05 | Update: 1.394e-06 mean,5.651e-06 std | Epoch: [0][140/3188] | Time 1.050 (2.507) | Data 0.022 (1.393) | Loss 15.4920 (16.6195) | Bd 3.4466 (3.4678) | acc 0.530 (0.447) | IoU 0.138 (0.115) | [7 days, 4:30:40]
+Lr: 1.036e-04 | Update: 1.603e-06 mean,8.090e-06 std | Epoch: [0][150/3188] | Time 1.208 (2.417) | Data 0.022 (1.302) | Loss 14.9480 (16.4924) | Bd 3.4383 (3.4660) | acc 0.559 (0.455) | IoU 0.166 (0.118) | [6 days, 20:31:02]
+Lr: 1.099e-04 | Update: 1.520e-06 mean,7.177e-06 std | Epoch: [0][160/3188] | Time 1.036 (2.336) | Data 0.023 (1.222) | Loss 14.2118 (16.3811) | Bd 3.4345 (3.4639) | acc 0.597 (0.462) | IoU 0.187 (0.121) | [6 days, 13:22:46]
+Lr: 1.161e-04 | Update: 1.624e-06 mean,7.089e-06 std | Epoch: [0][170/3188] | Time 1.078 (2.265) | Data 0.022 (1.152) | Loss 13.5701 (16.2596) | Bd 3.4231 (3.4622) | acc 0.635 (0.469) | IoU 0.192 (0.124) | [6 days, 7:08:47]
+Lr: 1.224e-04 | Update: 1.845e-06 mean,7.717e-06 std | Epoch: [0][180/3188] | Time 1.211 (2.204) | Data 0.023 (1.090) | Loss 13.2809 (16.1269) | Bd 3.4247 (3.4601) | acc 0.595 (0.476) | IoU 0.168 (0.127) | [6 days, 1:39:51]
+Lr: 1.286e-04 | Update: 1.580e-06 mean,6.381e-06 std | Epoch: [0][190/3188] | Time 1.022 (2.148) | Data 0.022 (1.034) | Loss 14.0567 (16.0145) | Bd 3.4245 (3.4582) | acc 0.579 (0.481) | IoU 0.159 (0.129) | [5 days, 20:41:51]
+Lr: 1.348e-04 | Update: 1.627e-06 mean,7.794e-06 std | Epoch: [0][200/3188] | Time 1.198 (2.098) | Data 0.022 (0.984) | Loss 14.1883 (15.9026) | Bd 3.4070 (3.4559) | acc 0.581 (0.487) | IoU 0.181 (0.132) | [5 days, 16:17:18]
+Lr: 1.411e-04 | Update: 1.417e-06 mean,8.113e-06 std | Epoch: [0][210/3188] | Time 1.295 (2.053) | Data 0.023 (0.938) | Loss 13.6112 (15.7976) | Bd 3.4193 (3.4540) | acc 0.566 (0.493) | IoU 0.172 (0.135) | [5 days, 12:14:57]
+Lr: 1.473e-04 | Update: 1.648e-06 mean,8.338e-06 std | Epoch: [0][220/3188] | Time 1.038 (2.011) | Data 0.024 (0.897) | Loss 13.6267 (15.7248) | Bd 3.4057 (3.4521) | acc 0.562 (0.496) | IoU 0.186 (0.137) | [5 days, 8:33:52]
+Lr: 1.536e-04 | Update: 1.612e-06 mean,7.772e-06 std | Epoch: [0][230/3188] | Time 1.009 (1.975) | Data 0.022 (0.859) | Loss 13.0841 (15.6404) | Bd 3.4048 (3.4504) | acc 0.614 (0.499) | IoU 0.177 (0.138) | [5 days, 5:16:31]
+Traceback (most recent call last):
+  File "/workspace/LENet/train.py", line 57, in <module>
+    trainer.train()
+  File "/workspace/LENet/modules/trainer.py", line 296, in train
+    acc, iou, loss, update_mean, hetero_l = self.train_epoch(train_loader=self.parser.get_train_set(),
+  File "/workspace/LENet/modules/trainer.py", line 390, in train_epoch
+    loss_m.backward(idx)
+  File "/opt/conda/lib/python3.10/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/opt/conda/lib/python3.10/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
