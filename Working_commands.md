@@ -16,3 +16,10 @@ python infer.py -d /workspace/dataset/SemanticKITTI -m /work/akmt/datset/lenet_t
  ```
 python visualize.py -w kitti -d /work/akmt/dataset/SemanticKITTI -s 08 -p /work/akmt/LENet/trained_models_predictions
  ```
+
+- ## Command to run inference on Slamantic: 
+
+```
+python infer_target.py -d /workspace/dataset/SLAMANTIC -m /workspacexperiment/lenet_trained -l /workspace/test_slamantic_predictions -s test 
+
+```
